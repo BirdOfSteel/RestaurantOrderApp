@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Smythe;
+} 
+
+#all-div {
+    height: 800px;
+    width: 600px;
+    display: block;
+}
+
+        #banner {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 130px;
+            background-image: url("https://images.unsplash.com/photo-1616645500344-209060c84970?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+            background-position: center;
+            background-position-y: 67%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+                #banner p, #banner h1 {
+                    margin: 0px 0px 0px 40px;
+                    color: #FFFFFF;
+                    font-weight: lighter;
+                }
+        
+                
+
+        #menu-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+        }
+
+                #menu-items-div {
+                    width: 80%;
+                }
+                
+                        .food-item-div {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: row;
+                            padding: 30px 0px;
+                            border-bottom: 1px solid #D2D2D2;
+                        }
+                        
+                                .emoji-div {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 75px;
+                                    height: 75px;
+                                }
+                                
+                                        .emoji {
+                                            font-size: 70px;
+                                        }
+                                
+                                .food-item-details-div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 0px 10px 0px 15px;
+                                }
+                                
+                                        .food-item-name {
+                                            font-size: 20px;
+                                            font-weight: bolder;
+                                            margin: 0px;
+                                        }
+                                
+                                        .food-item-ingredients {
+                                            color: #8B8B8B;
+                                            margin: 0px 0px 10px 0px;
+                                        }
+                                        
+                                        .food-item-price {
+                                            font-weight: bolder;
+                                            margin: 0px;
+                                        }
+
+                                .add-item-div {
+                                    margin-left: auto;
+                                    font-weight: bolder;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 40px;
+                                    min-width: 40px;
+                                    color: #3C3C3C;
+                                    border: 1px solid #DEDEDE;
+                                    border-radius: 50%;
+                                }  
+
+        #order-info-div {
+            position: relative;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+        }
+
+                #order-info-child-div {
+                    width: 80%;
+                }
+                
+                        #order-info-heading {
+                            
+                        }
+        
+                        #current-order-div {
+                            padding-bottom: 10px;
+                        }
+                                
+                            
+                                .added-food-item-div {
+                                    display: flex;
+                                    align-items: center;
+                                    height: 30px;
+                                }
+                                
+                                        .food-name-and-remove-button-div {
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                        }
+                                
+                                                .added-food-item {
+                                                    margin: 0px;
+                                                    font-size: 25px;
+                                                }
+                                                
+                                                .remove-food-item {
+                                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                                    font-size: 10px;
+                                                    margin: 0px;
+                                                    color: #BBBBBB;
+                                                    padding: 7px 0px 0px 10px;
+                                                }
+                                        
+                                        .added-food-item-price {
+                                            font-size: 20px;
+                                            margin-left: auto;
+                                        }
+                        
+                        
+                        
+                        #pricing-div {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        
+                                #total-price-div {
+                                    font-size: 25px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    border-top: 1px solid #393333;
+                                }
+                                
+                                        #total-price-div p {
+                                            margin: 15px 0px 0px 0px;
+                                        }
+                                
+                                #meal-deal-applied-div {
+                                    display: none;
+                                    justify-content: space-between;
+                                }
+                                
+                                        #meal-deal-applied-text {
+                                            font-size: 20px;
+                                            color: red;
+                                            margin: 0px;
+                                        }
+                                        
+                                        #meal-deal-applied-value {
+                                            text-align: end;
+                                            margin: 0px;
+                                            color: red;
+                                        }
+                        
+                        #confirm-order-btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            font-size: 15px;
+                            background: #16DB99;
+                            color: #FFFFFF;
+                            height: 50px;
+                            border-radius: 3px;
+                            margin-top: 25px;
+                        }
+
+
+        #form-div {
+            position: absolute;
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background: white;
+            width: 85%;
+            border-radius: 3px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            box-shadow: 0px 0px 100px -20px black;
+        }
+                
+                
+                #close-payment {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+                
+                #payment-form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    width: 90%;
+                }
+                        
+                        #form-div-header {
+                            padding: 5% 0px;
+                        }
+                
+                        #payment-form input {
+                            height: 50px;
+                            width: 100%;
+                            padding: 12px 15px;
+                            box-sizing: border-box;
+                            -moz-box-sizing: border-box;
+                        }
+                        
+                        #error-message-div {
+                            color: red;
+                            font-size: 14px;
+                        }
+                        
+                        #submit-payment-details-btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 3px;
+                            height: 50px;
+                            width: 100%;
+                            background: #16DB99;
+                            color: #FFFFFF;
+                            margin: 5% 0px 3% 0px;
+                        }
+
+
+        #review-div {
+            position: absolute;
+            display: none;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 80px -40px black;
+            padding-bottom: 10px;
+            border-radius: 3px;
+        }
+
+                #review-div p {
+                    padding: 0px;
+                    margin: 10px;
+                    font-size: 18px;
+                }
+                
+                #close-review {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+
+                #stars-div {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 15px;
+                }
+                
+                        .star-div {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            margin: 0px -2px;
+                        }
+                        
+                        
+                .fa-star {
+                    color: gold;
+                }
+                
+                #review-textarea {
+                    min-height: 45px;
+                    resize: none;
+                    border: 1px solid #3C3C3C;
+                    border-radius: 3px;
+                    user-select: none;
+                }
+                
+                #review-error-div {
+                    color: red;
+                    padding-top: 5px;
+                }
+                
+                #submit-review-btn {
+                    text-align: center;
+                    border: 1px solid #3C3C3C;
+                    border-radius: 3px;
+                    width: 50px;
+                }
