@@ -117,6 +117,11 @@ function submitPaymentDetails(e) {
     }
     
     else {
+        document.getElementById("order-info-child-div").style.display = "none";
+    
+        document.getElementById("thank-you-message").innerHTML = `Thanks, ${cardHolderName.value}! Your order is on it's way.`
+        document.getElementById("thank-you-message-div").style.display = "block";
+        
         document.getElementById("form-div").style.display = "none"; 
         document.getElementById("review-div").style.display = "flex";    
     }
